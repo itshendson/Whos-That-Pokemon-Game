@@ -1,0 +1,10 @@
+In PokemonGenerator.js
+Used for fetching the wrong Gusses
+
+    fetchApiAndSetStateForWrongGuesses(randNum) {
+        
+        fetch('https://pokeapi.co/api/v2/pokemon/' + randNum)
+            .then(response => response.json())
+            .then(response => {this.globalArray.push(response.name)})
+    }   
+

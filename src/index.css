@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+    font-size: 30px;
+}
+
+:root {
+    --hue-neutral: 200;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+.container-main {
+    display: block;
+    background-color: #ffcb05;
+    width: 800px;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 6px;
+}
+
+#stage-container {
+    position: relative;
+}
+
+#score-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+}
+
+#score-font {
+    margin: 0;
+}
+
+.the-stage {
+    border: 3px solid;
+    display: block;
+    margin: 10px auto;
+    width: 600px;
+    background-color: lightgrey;
+    border-radius: 25px;
+}
+
+#choice-container {
+    background-color: red;
+    display: block;
+    width: 600px;
+    margin: 10px auto;
+}
+
+#button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px;
+    margin: 0px 10px;
+}
+
+
+.btn {
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 20px;
+    font: 20;
+    color: black;
+    outline: none;
+    width: 300px;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center
+}
+
+.hide {
+    display: none;
+}
+
+#start-btn {
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 2rem;
+    color: black;
+    outline: none;
+    width: 300px;
+    margin-top: 8px;
+}
+
+#start-btn:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#start-btn:active {
+    background-color: white;
+}
