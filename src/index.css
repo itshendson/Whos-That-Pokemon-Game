@@ -1,15 +1,10 @@
-*, *::before, *::after {
+* {
     box-sizing: border-box;
     font-family: cursive, sans-serif;
     font-size: 30px;
 }
 
-:root {
-    --hue-neutral: 200;
-}
-
 body {
-    --hue: var(--hue-neutral);
     margin: 0;
     padding: 0;
     display: flex;
@@ -17,7 +12,7 @@ body {
     height: 1200px;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 100%, 20%);
+    background-color: #c7a008
 }
 
 .container-main {
