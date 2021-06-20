@@ -62,7 +62,9 @@ class PokemonGenerator extends Component {
         .then(responses => Promise.all(responses.map(r => r.name)))
         .then(responses => this.fisherYatesShuffle(responses))
         .then(responses => this.setStateForGuesses(responses))
-        .then(responses => console.log(responses))
+        .catch(error => {
+            console.log(error);
+        })
     }
 
     //Helper Function: Takes the name of the pokemon and cast to MultipleChoice.js
