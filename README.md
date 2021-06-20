@@ -2,7 +2,7 @@
 [Link to Application](https://who-s-that-pokemon-2bb45.web.app/)
 
 ## Description
-Who's That Pokemon is a web application game based on the popular television series Pokemon. In the television series right before commercial break a random Pokemon is shown on screen and viewers are invited to guess which Pokemon it is. This game is a multiple choice version of that. A random Pokemon is shown on the browser with 4 choices. Users must pick the correct option.
+Who's That Pokemon is a web application game based on the popular television series Pokemon. In the television series right before commercial break a random Pokemon is shown on screen and viewers are invited to guess which Pokemon it is. This game is a multiple choice version of that. A random Pokemon is shown on the browser with 4 choices. Players must pick the correct choice.
 
 ## Technologies
 - JavaScript
@@ -12,7 +12,7 @@ Who's That Pokemon is a web application game based on the popular television ser
 - Firebase
 
 ## How It Works
-Every Pokemon in the Pokemon universe has a unique ID associated with it. For instance, Pikachu is 025, Charmander is 004, and Mew is 151. The application works by generating 4 random Pokemon IDs between 1 and 151 inclusively. In order to setup the correct image/name options, an API call is made to the PokiAPI service to grab a random Pokemon image. Four more API calls are made to grab four Pokemon names (including one for the correct option and three others for the incorrect options). The Pokemon names are then randomly shuffled using the Sally Yates Shuffle and set to each multiple choice options. 
+Every Pokemon in the Pokemon universe has a unique ID associated with it. For instance, Pikachu is 025, Charmander is 004, and Mew is 151. The application works by generating 4 random Pokemon IDs between 1 and 151. In order to setup the correct image/name options, an API call is made to the PokiAPI service to grab a random Pokemon image. Four more API calls are made to grab four Pokemon names (including one for the correct option and three others for the incorrect options). The Pokemon names are then randomly shuffled using the Sally Yates Shuffle and set to each multiple choice options. If the player picks the correct name for the given image, they score a point.
 
 ## Challenges and Unique Elements
 The hardest challenge was how to fetch 4 Pokemon names and then randomly set it as one of the multiple choice options that users can pick. There were 3 main ideas on how I would accomplish this:
