@@ -25,8 +25,10 @@ Ultimately, I chose option 3 because it produced the cleanest and most elegant c
 
 ## Conclusion and Future Plans
 There were many choices that I had to make in making this seemingly simple game. For instance, how should I populate the multiple choice options for the correct/incorrect guesses? Should I have: 
+
     1. Made my own JSON file containing all 151 Pokemon images/names/IDs or,
     2. Used the PokiAPI service to populate in the multiple choices
+    
 There are good reasons to have gone with my own JSON file. If PokiAPI ever shuts down or there is a service interruption, then my application would simply break. However, I ultimately went with the PokiAPI service. Setting up my own JSON file with 151 Pokemon images/names/IDs would have taken way too much time. But perhaps more importantly, although my application only displays the first 151 Pokemon, in reality there are nearly 900 Pokemon with more added each year. For my web application to be robust and account for the fact that more Pokemon may be added in the future, I should be relying on a service, like PokiAPI, to manage all that. My application, as implemented the way it is, would not need to be adjusted in any ways to accomodate for more new Pokemon.
 
 My Future plans are to add expand options for users to select which generation of Pokemon they want included in the game. As I mentioned, although I only included 151 Pokemon (ie. the first generation of Pokemon), there are actually nearly 900 Pokemon spanning eight generations as of this writing. I intend for users to select the generation they wish to appear in my game.
